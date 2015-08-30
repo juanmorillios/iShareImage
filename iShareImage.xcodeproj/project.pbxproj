@@ -13,6 +13,8 @@
 		B9EF68921B93424C0057080C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9EF68911B93424C0057080C /* Images.xcassets */; };
 		B9EF68951B93424C0057080C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9EF68931B93424C0057080C /* LaunchScreen.xib */; };
 		B9EF68A11B93424C0057080C /* iShareImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF68A01B93424C0057080C /* iShareImageTests.swift */; };
+		B9EF68D61B934A990057080C /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EF68D41B934A990057080C /* Icon-40@3x.png */; };
+		B9EF68D71B934A990057080C /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EF68D51B934A990057080C /* Icon-60@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		B9EF689A1B93424C0057080C /* iShareImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShareImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EF689F1B93424C0057080C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9EF68A01B93424C0057080C /* iShareImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShareImageTests.swift; sourceTree = "<group>"; };
+		B9EF68D41B934A990057080C /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		B9EF68D51B934A990057080C /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				B9EF688C1B93424C0057080C /* ViewController.swift */,
 				B9EF688E1B93424C0057080C /* Main.storyboard */,
 				B9EF68911B93424C0057080C /* Images.xcassets */,
+				B9EF68D41B934A990057080C /* Icon-40@3x.png */,
+				B9EF68D51B934A990057080C /* Icon-60@2x.png */,
 				B9EF68931B93424C0057080C /* LaunchScreen.xib */,
 				B9EF68881B93424C0057080C /* Supporting Files */,
 			);
@@ -195,6 +201,8 @@
 				B9EF68901B93424C0057080C /* Main.storyboard in Resources */,
 				B9EF68951B93424C0057080C /* LaunchScreen.xib in Resources */,
 				B9EF68921B93424C0057080C /* Images.xcassets in Resources */,
+				B9EF68D71B934A990057080C /* Icon-60@2x.png in Resources */,
+				B9EF68D61B934A990057080C /* Icon-40@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = iShareImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = iShareImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
