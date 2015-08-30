@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Social
+
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -20,14 +22,48 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func shareToTwitter(sender: UIBarButtonItem) {
         
+        //Implementation Share to Twitter
+        
+        let posCreator = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        
+        if setViewPostCreator(posCreator){
+        
+            self.presentViewController(posCreator, animated:true, completion:nil)
+        
+        
+        }
+        
         
     }
     
     
     @IBAction func shareToFacebook(sender: UIBarButtonItem) {
         
+        let posCreator = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        
+        if setViewPostCreator(posCreator){
+        
+            self.presentViewController(posCreator, animated:true, completion: nil)
+        
+        }
+        
         
     }
+    
+    private func setViewPostCreator(ViewController:SLComposeViewController) -> Bool {
+        
+        if let selectedImage = imageView.image {
+            
+            ViewController.setInitialText("Publising for iShareImage.")
+            
+            ViewController.addImage(selectedImage)
+            
+            return true
+                    }
+        
+        return false
+    }
+
     
     
     @IBAction func changeImage(sender: UIButton) {
@@ -55,6 +91,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         
     }
+    
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        
+        imageView.contentMode = UIViewContentMode.ScaleAspectFill
+            
+        
+            //Mostramos la imagen
+            
+            imageView.image = pickedImage
+        
+        }
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+   
     
     
     override func viewDidLoad() {

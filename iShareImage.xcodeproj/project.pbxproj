@@ -17,6 +17,7 @@
 		B9EF68D71B934A990057080C /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EF68D51B934A990057080C /* Icon-60@2x.png */; };
 		B9EF68DA1B934ED50057080C /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EF68D81B934ED50057080C /* facebook.png */; };
 		B9EF68DB1B934ED50057080C /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EF68D91B934ED50057080C /* twitter.png */; };
+		B9EF68DD1B9367F90057080C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EF68DC1B9367F90057080C /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B9EF68D51B934A990057080C /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		B9EF68D81B934ED50057080C /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		B9EF68D91B934ED50057080C /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		B9EF68DC1B9367F90057080C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EF68DD1B9367F90057080C /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +70,7 @@
 		B9EF687C1B93424B0057080C = {
 			isa = PBXGroup;
 			children = (
+				B9EF68DC1B9367F90057080C /* Social.framework */,
 				B9EF68871B93424C0057080C /* iShareImage */,
 				B9EF689D1B93424C0057080C /* iShareImageTests */,
 				B9EF68861B93424C0057080C /* Products */,
