@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet var imageView: UIImageView!
     
@@ -31,6 +31,27 @@ class ViewController: UIViewController {
     
     
     @IBAction func changeImage(sender: UIButton) {
+        
+    //Select image to change
+        
+        let imagePicker = UIImagePickerController()
+        
+        
+        //Delegate
+        imagePicker.delegate = self
+        
+        //Source of image
+        
+        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+       
+        //Editing image = false
+        imagePicker.allowsEditing = false
+        
+        //Aplication of animation change to capture image
+        self.presentViewController(imagePicker, animated:true, completion:nil)
+        
+        //Hide title of button change image
+        sender.setTitle("", forState: UIControlState.Normal)
         
         
     }
