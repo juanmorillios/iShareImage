@@ -14,7 +14,30 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBOutlet var imageView: UIImageView!
     
+    let context = CIContext(options: nil)
+    
     @IBAction func applyfilter(sender: UIBarButtonItem) {
+    
+        //Creamos el objeto imagen para luego aplicarle el filtro
+        
+    let inputImage = CIImage(image: imageView.image!)
+        
+        //Color aleatorio para aplicar como filtro
+        
+        let randomColor = [kCIInputAngleKey:(Double(arc4random_uniform(314)) / 100)]
+        
+        // Aplicamos el filtro a la imagen seleccionada
+        
+        let filterImage = inputImage.imageByApplyingFilter("CIHueAdjust", withInputParameters: randomColor)
+        
+        //Renderizamos la imagen 
+        
+        let renderedImage = context.createCGImage(filterImage, fromRect: filterImage.extent())
+        
+        // Reflejando los cambios realizados en la aplicación
+        
+        imageView.image = UIImage(CGImage: renderedImage)
+        
         
         
     }

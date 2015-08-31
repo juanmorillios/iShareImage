@@ -177,7 +177,6 @@
 				TargetAttributes = {
 					B9EF68841B93424C0057080C = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 6ZJQ583HU9;
 					};
 					B9EF68991B93424C0057080C = {
 						CreatedOnToolsVersion = 6.4;
@@ -434,6 +433,7 @@
 				B9EF68A61B93424C0057080C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9EF68A71B93424C0057080C /* Build configuration list for PBXNativeTarget "iShareImageTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +442,7 @@
 				B9EF68A91B93424C0057080C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
