@@ -21,8 +21,10 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqu-SL-l0C">
-                                <rect key="frame" x="108" y="269" width="104" height="30"/>
+                                <rect key="frame" x="55" y="250" width="210" height="70"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="28"/>
                                 <state key="normal" title="Change Image">
+                                    <color key="titleColor" red="0.83921568627450982" green="0.92549019607843142" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -30,7 +32,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.5607843137254902" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Twitter" style="plain" id="yOs-HP-jPg">
@@ -72,6 +74,7 @@
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nNM-up-rtk">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.40784313725490196" green="0.75686274509803919" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                     </toolbar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="dI6-xc-pl7"/>
@@ -87,4 +90,5 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" red="0.31764705882352939" green="0.33725490196078434" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
 </document>
