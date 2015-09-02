@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B371454E-E029-4DDC-A292-3FAD59A2E011</string>
 	<key>IDESourceControlProjectName</key>
-	<string>iShareImage</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E3E27C53DB634C98768818699E2801F245F5ED09</key>
 		<string>https://github.com/juanmorillios/iShareImage.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iShareImage.xcodeproj</string>
+	<string>iShareImage.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E3E27C53DB634C98768818699E2801F245F5ED09</key>
