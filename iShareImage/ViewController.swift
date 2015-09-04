@@ -16,6 +16,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     let context = CIContext(options: nil)
     
+    //Declaro una variable para la clase UIImagePickerController
+    var myControllerImage: UIImagePickerController!
+    
     @IBAction func applyfilter(sender: UIBarButtonItem) {
     
         //Creamos el objeto imagen para luego aplicarle el filtro
@@ -115,17 +118,45 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
+    //Implementamos el metodo para que se encarge de enlazar nuestro boton y realice la foto.
+    @IBAction func makePhoto(sender: UIButton) {
+        
+        
+        //Declaro el controlador
+        myControllerImage = UIImagePickerController()
+        
+        //El delegado sera el mismo, ya que hereda de la misma clase
+        myControllerImage.delegate = self
+        
+        //Defino el tipo de controlador, decimos que va a realizar foto, la fuente será la camara.
+        myControllerImage.sourceType = .Camera
+        
+        //Presentamos la vista que hemos seleccionado en nuestro objeto
+        presentViewController(myControllerImage, animated: true, completion: nil)
+        
+        
+    }
+    
+    
+    //Implementación del método delegado
+    
+    var saveImage:UIImage?
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
         
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        myControllerImage.dismissViewControllerAnimated(true, completion: nil)
             
         
             //Mostramos la imagen
             
             imageView.image = pickedImage
+            
+            imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+            saveImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+            UIImageWriteToSavedPhotosAlbum(saveImage, nil, nil, nil)
         
         }
         
