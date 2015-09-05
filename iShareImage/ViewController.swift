@@ -107,7 +107,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
        
         //Editing image = false
-        imagePicker.allowsEditing = false
+        imagePicker.allowsEditing = true
         
         //Aplication of animation change to capture image
         self.presentViewController(imagePicker, animated:true, completion:nil)
@@ -118,7 +118,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
-    //Implementamos el metodo para que se encarge de enlazar nuestro boton y realice la foto.
+  //Implementamos el metodo para que se encarge de enlazar nuestro boton y realice la foto.
     @IBAction func makePhoto(sender: UIButton) {
         
         
@@ -136,6 +136,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         
     }
+  
     
     
     //Implementación del método delegado
